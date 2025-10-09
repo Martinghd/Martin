@@ -1,1 +1,237 @@
+:root {
+  --bg: #0f1724;
+  --card: #0b1220;
+  --accent: #ff6b35;
+  --muted: #9aa6b2;
+  --glass: rgba(255, 255, 255, 0.03);
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(180deg, #071023 0%, #07172a 60%), var(--bg);
+  color: #e6eef6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.45;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  width: 56px;
+  height: 56px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #1f8fff, #34d399);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  color: #07203a;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+}
+
+nav {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+.cta {
+  background: var(--accent);
+  color: #071023;
+  padding: 10px 14px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+/* HERO */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 28px;
+  align-items: center;
+  margin: 28px 0;
+  padding: 28px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(2, 6, 23, 0.6);
+}
+
+.hero h1 {
+  font-size: 34px;
+  margin: 0 0 12px;
+  color: #fff;
+}
+
+.hero p {
+  color: var(--muted);
+  margin: 0 0 18px;
+}
+
+.badges {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.badge {
+  background: var(--glass);
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-weight: 600;
+  color: #cfeafe;
+}
+
+.hero-visual {
+  height: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  background-image: url('https://images.unsplash.com/photo-1526406915895-3f3f9b0d8f1b?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder');
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 0 -60px 120px rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: flex-end;
+  padding: 18px;
+  color: #fff;
+}
+
+.hero-visual .meta {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.35));
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* Grid sections */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 22px;
+}
+
+.card {
+  background: var(--card);
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(2, 6, 23, 0.6);
+}
+
+.card h3 {
+  margin: 0 0 10px;
+}
+
+.muted {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* Events */
+.events {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.event {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  padding: 12px;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.01));
+  border-radius: 10px;
+}
+
+.event .date {
+  width: 84px;
+  text-align: center;
+  padding: 8px;
+  border-radius: 8px;
+  background: #07172a;
+  color: var(--accent);
+  font-weight: 800;
+}
+
+.event .info h4 {
+  margin: 0 0 6px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Testimonials */
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.test {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #0b1320;
+  border: 3px solid rgba(255, 255, 255, 0.03);
+}
+
+/* Contact */
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+form input,
+form textarea {
+  padding: 
 
