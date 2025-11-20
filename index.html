@@ -1,73 +1,83 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Ma Première Page HTML</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martin Guichard - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Bienvenue sur ma page web !</h1>
-    <p>Ceci est un paragraphe de texte pour illustrer une page HTML de base.</p>
+    <div class="container">
+        <header>
+            <h1>Martin Guichard</h1>
+            <p>Marketing Digital & Sport | Triathlète National</p>
+        </header>
 
-    <h2>Liste des choses à faire :</h2>
-    <ul>
-        <li>Apprendre HTML</li>
-        <li>Créer une page web</li>
-        <li>Publier mon site</li>
-    </ul>
-
-    <p>Visitez <a href="https://www.example.com">ce site</a> pour plus d'informations.</p>
-
-    <footer>
-        <p>&copy; 2025 Mon Nom. Tous droits réservés.</p>
-    </footer>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Quatorze Running — Portfolio (version mock)</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="container">
-    <header>
-      <div class="brand">
-        <div class="logo">Q14</div>
-        <div>
-          <div style="font-weight:800">Quatorze Running</div>
-          <div style="font-size:13px;color:var(--muted)">Club — Coach — Événements</div>
+        <div class="card">
+            <h2>👋 À Propos</h2>
+            <p><strong>19 ans</strong> - Étudiant en 3ème année de Licence Commercialisation de Produits et Services Sportifs</p>
+            <p style="margin-top: 15px;">Passionné par le triathlon depuis 8 ans, je pratique ce sport à un niveau national. Mon parcours m'a amené de la pâtisserie au marketing sportif, deux domaines qui partagent créativité et rigueur.</p>
         </div>
-      </div>
 
-      <nav aria-label="Navigation principale">
-        <a href="#about">À propos</a>
-        <a href="#programs">Programmes</a>
-        <a href="#events">Événements</a>
-        <a href="#contact">Contact</a>
-        <a class="cta" href="#contact">Rejoindre</a>
-      </nav>
-    </header>
+        <div class="card">
+            <h2>💼 Parcours Professionnel</h2>
+            <ul>
+                <li><strong>Actuellement :</strong> Alternance chez Quatorze Running - Gestion du contenu visuel e-commerce et activations marketing</li>
+                <li><strong>Alltricks :</strong> Assistant Brand Marketing - Combinaison de mes passions pour le sport et le marketing</li>
+                <li><strong>Décathlon :</strong> Stage Marketing</li>
+                <li><strong>Cédric Grolet au Meurice :</strong> Expérience en pâtisserie de luxe à Paris</li>
+                <li><strong>École Hôtelière Paris :</strong> Stage initial dans le secteur de la pâtisserie</li>
+            </ul>
+        </div>
 
-    <!-- le reste du HTML reste inchangé -->
+        <div class="card">
+            <h2>🛠️ Compétences & Outils</h2>
+            <div class="skills">
+                <div class="skill-tag">Shopify</div>
+                <div class="skill-tag">Klaviyo</div>
+                <div class="skill-tag">Fastmag</div>
+                <div class="skill-tag">Microsoft 365</div>
+                <div class="skill-tag">Instagram</div>
+                <div class="skill-tag">Facebook</div>
+                <div class="skill-tag">LinkedIn</div>
+                <div class="skill-tag">Contenu Digital</div>
+                <div class="skill-tag">Marketing Sportif</div>
+            </div>
+        </div>
 
-    <!-- Pour simplifier ici, dis-moi si tu veux que je recolle TOUT le HTML complet. Sinon, tu peux reprendre le contenu que je t’ai donné dans la version précédente et simplement enlever la balise <style> du <head> -->
-    
-    <footer>
-      <div style="margin-bottom:8px">© 2026 Quatorze Running — Version mock (toutes les infos sont fictives)</div>
-      <div style="color:var(--muted)">Adresse factice: 14 rue du Running, 75014 Paris · Email: contact@quatorzerunning.fake</div>
-    </footer>
-  </div>
+        <div class="card">
+            <h2>🎯 Projets</h2>
+            <h3>Court Terme</h3>
+            <p>Partir en Australie pendant un an pour perfectionner mon anglais et vivre une immersion totale. Un véritable challenge de développement personnel en solo avec un sac à dos.</p>
+            
+            <h3>Long Terme</h3>
+            <p>Travailler pour une marque de sport lifestyle et technique comme Oakley. Mon rêve ultime : manager la carrière de triathlètes professionnels en gérant leurs sponsors, événements et projets annexes.</p>
+        </div>
 
-  <script>
-    // petit JS utile : placeholder pour interactions minimes
-    (function(){
-      document.addEventListener('keydown', function(e){
-        if(e.key === 'Escape') console.log('ESC pressed (no modal)');
-      });
-    })();
-  </script>
+        <div class="quote">
+            "Vous devez savoir pourquoi vous faites ça, et ça ne doit pas être la célébrité ou l'argent."
+        </div>
+
+        <div class="card">
+            <h2>🎨 Loisirs & Passions</h2>
+            <ul>
+                <li>🏊‍♂️ Triathlon (niveau national depuis 8 ans)</li>
+                <li>🎵 Musique et découverte de nouveaux styles</li>
+                <li>✈️ Voyages (principalement Union Européenne, bientôt l'Australie!)</li>
+            </ul>
+        </div>
+
+        <div class="contact">
+            <h2>📬 Me Contacter</h2>
+            <p>N'hésitez pas à me contacter pour échanger sur le marketing sportif, le triathlon ou tout projet passionnant !</p>
+            <a href="mailto:m.guichard@ileps.fr" class="contact-btn" id="contactBtn">
+                <span class="btn-icon">✉️</span>
+                <span class="btn-text">m.guichard@ileps.fr</span>
+            </a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
